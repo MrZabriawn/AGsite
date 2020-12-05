@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Only in Aliquippa</h1>
+    <p>I invite you to share some good news happening in the city. Timestamp the posts and put them on the right side
+        like in ths stickies project</p>
+</div>
+@model AGsite.Models.NewsModel
+<form action="form1" method="post">
+    <table>
+        <tr>
+            <td>Enter ID: </td>
+            <td><input type="text" name="txtId" /></td>
+        </tr>
+        <tr>
+            <td>Enter Name: </td>
+            <td><input type="text" name="txtName" /></td>
+        </tr>
+        <tr>
+            <td>What's the News? </td>
+            <td><input type="text" name="story" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit Form" /></td>
+        </tr>
+    </table>
+</form>
