@@ -5,7 +5,7 @@ namespace AGsite.Data
 {
     public class SurveyDataContext : DbContext
     {
-        public SurveyDataContext (DbContextOptions<SurveyDataContext> options)
+        public SurveyDataContext(DbContextOptions<SurveyDataContext> options)
             : base(options)
         {
         }

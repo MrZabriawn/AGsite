@@ -16,9 +16,5 @@ namespace AGsite.Controllers
         
         // GET: /Survey/Stats
 
-        public string Stats()
-        {
-            return "This is the post Survey page but shows a breakdown of relevant stats. You can also go straight here.";
-        }
     }
 }

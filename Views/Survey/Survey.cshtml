@@ -12,6 +12,8 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
+
+@model IEnumerable<AGsite.Models.SurveyData>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,60 +37,112 @@ Coded by www.creative-tim.com
   <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
-<body class="contact-page sidebar-collapse">
-  <div class="main">
-    <div class="section section-gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 ml-auto mr-auto text-center">
-            <h2 class="title">Dear City of Aliquippa</h2>
-            <p>Jones School once did this. It was looked at like this. Tell me you remember. Or that you can imagine it.
-              On December 22nd, there will be a hearing to discuss whether or not this building should be
+<body>
 
-              In 2005 a project began on Plan 11 at the former Jones School Elementary site that hasn’t been completed
-              to date. On August 7th, 2020 at 9:00 AM there will be a hearing at the Beaver County Courthouse to discuss
-              how best to move forward with the site. Concerned residents of Aliquippa have proposed that the site be
-              converted into a hub for local produce that adds value to the community. If you are interested in sharing
-              your thoughts please fill out the petition below..
+  <div class="column">
+    <div class="container">
+      <div class="col-md-8 ml-auto mr-auto text-center">
+        <h1 class="title">Dear City of Aliquippa</h1>
+        <p>
+          In 2005 a project began on Plan 11 at the former Jones School Elementary site that hasn’t been completed
+          to date. On December 22nd, 2020 at 9:00 AM there will be a hearing at the Beaver County Courthouse to
+          discuss how best to move forward with the site. Concerned residents of Aliquippa have proposed that the
+          site be
+          converted into a space that adds value to the community. If you are interested in sharing
+          your thoughts please fill out the petition below.
 
-              If you cannot attend the hearing but are interested in supporting this effort, please sign below.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 ml-auto mr-auto text-center">
-            <h3 class="title"><small>We want your input. Sing the petition and tell us what you
-                think.</small></h3>
-            <form class="contact">
-              <div class="row">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First Name">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Last Name">
-                </div>
+          If you can, please consider attending the hearing.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ml-auto mr-auto text-center">
+          <h2 class="title"><small>We want your input. Sign the petition and tell us what you
+              think.</small></h2>
+          <form class="Petition">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="First Name">
               </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Email">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="How Long Have you Lived Here">
-                </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Last Name">
               </div>
-              <textarea class="form-control" placeholder="Message" rows="7"></textarea>
-              <div class="row">
-                <div class="col-md-6 ml-auto mr-auto">
-                  <button class="btn btn-primary btn-block btn-round">Send </button>
-                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Email Address">
               </div>
-            </form>
-            <h3 class="visit"><small>Or come and visit</small></h3>
-          </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="How Long Have you Lived in Quip?">
+              </div>
+            </div>
+            <textarea class="form-control" placeholder="What should we turn the Jones School building into?"
+              rows="7"></textarea>
+            <div class="row">
+              <div class="col-md-6 ml-auto mr-auto">
+                <button class="btn btn-primary btn-block btn-round">Submit</button>
+              </div>
+            </div>
+          </form>
+          <h3 class="visit"><small>Put a petition disclaimer here. Something something sending emails and whatnot and
+              so.</small></h3>
         </div>
       </div>
     </div>
   </div>
-  <div id="contactUsMap" class="big-map"></div>
+  <div class="column2">
+    <h1 class="title">Stats</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+          </th>
+          <th>
+            @Html.DisplayNameFor(model => model.LastName)
+          </th>
+          <th>
+            @Html.DisplayNameFor(model => model.Email)
+          </th>
+          <th>
+            @Html.DisplayNameFor(model => model.Answer)
+          </th>
+          <th>
+            @Html.DisplayNameFor(model => model.SingleAnswer)
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        @* @foreach (var item in Model)
+          {
+          <tr>
+          <td>
+          @Html.DisplayFor(modelItem => item.FirstName)
+          </td>
+          <td>
+          @Html.DisplayFor(modelItem => item.LastName)
+          </td>
+          <td>
+          @Html.DisplayFor(modelItem => item.Email)
+          </td>
+          <td>
+          @Html.DisplayFor(modelItem => item.SingleAnswer)
+          </td>
+          <td>
+          <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+          <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+          <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+          </td> *@
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+
+
+
 
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
@@ -127,5 +181,21 @@ Coded by www.creative-tim.com
     });
   </script>
 </body>
+
+<style>
+  .column {
+    float: left;
+    width: 55%;
+    min-height: 100vh;
+    background-color: yellow;
+  }
+
+  .column2 {
+    float: right;
+    width: 45%;
+    min-height: 100vh;
+    background-color: blue;
+  }
+</style>
 
 </html>

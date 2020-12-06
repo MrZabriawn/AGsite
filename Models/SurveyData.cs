@@ -11,9 +11,7 @@ namespace AGsite.Models
 
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
-        public string Answer1 { get; set; }
-        public string Answer2 { get; set; }
-        public string Answer3 { get; set; }
-        public string Answer4 { get; set; }
+        public bool SingleAnswer {get; set;}
+        public string Answer { get; set; }
     }
 }

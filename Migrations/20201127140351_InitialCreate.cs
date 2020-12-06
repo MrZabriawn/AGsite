@@ -15,10 +15,8 @@ namespace AGsite.Migrations
                     FirstName = table.Column<string>(type: "TEXT", nullable: true),
                     LastName = table.Column<string>(type: "TEXT", nullable: true),
                     Email = table.Column<string>(type: "TEXT", nullable: true),
-                    Answer1 = table.Column<string>(type: "TEXT", nullable: true),
-                    Answer2 = table.Column<string>(type: "TEXT", nullable: true),
-                    Answer3 = table.Column<string>(type: "TEXT", nullable: true),
-                    Answer4 = table.Column<string>(type: "TEXT", nullable: true)
+                    SingleAnswer = table.Column<bool>(type:"TEXT", nullable: true),
+                    Answer = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
