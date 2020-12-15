@@ -13,7 +13,7 @@ namespace AGsite.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "5.0.0");
+                .HasAnnotation("ProductVersion", "5.0.1");
 
             modelBuilder.Entity("AGsite.Models.SurveyData", b =>
                 {
@@ -21,16 +21,7 @@ namespace AGsite.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Answer1")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Answer2")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Answer3")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Answer4")
+                    b.Property<string>("Answer")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")
@@ -41,6 +32,9 @@ namespace AGsite.Migrations
 
                     b.Property<string>("LastName")
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("SingleAnswer")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 

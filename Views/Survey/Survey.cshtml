@@ -13,7 +13,8 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
 
-@model IEnumerable<AGsite.Models.SurveyData>
+@model AGsite.Models.SurveyData
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,41 +42,45 @@ Coded by www.creative-tim.com
 
   <div class="column">
     <div class="container">
-      <div class="col-md-8 ml-auto mr-auto text-center">
+      <div class="col-md-12 ml-auto mr-auto text-center">
         <h1 class="title">Dear City of Aliquippa</h1>
-        <p>
-          In 2005 a project began on Plan 11 at the former Jones School Elementary site that hasn’t been completed
-          to date. On December 22nd, 2020 at 9:00 AM there will be a hearing at the Beaver County Courthouse to
+        <p class="para">
+          In 2005 a development project began on Plan 11 of Aliquippa at the former Jones School Elementary site that hasn’t been completed
+          to date. On December 22nd, 2020 at 9:30 AM there will be a hearing at the Beaver County Courthouse to
           discuss how best to move forward with the site. Concerned residents of Aliquippa have proposed that the
-          site be
-          converted into a space that adds value to the community. If you are interested in sharing
+          site be converted into a space that adds value to the community. If you are interested in sharing
           your thoughts please fill out the petition below.
 
-          If you can, please consider attending the hearing.
+          And please consider attending the hearing.
         </p>
       </div>
       <div class="row">
         <div class="col-md-6 ml-auto mr-auto text-center">
-          <h2 class="title"><small>We want your input. Sign the petition and tell us what you
-              think.</small></h2>
-          <form class="Petition">
+          <h1 class="hash"><small>#LetQuipDecide</small></h1>
+          <form asp-action="Create" method="post" class="Petition">
             <div class="row">
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="First Name">
+                <input asp-for="FirstName" type="text" class="form-control" placeholder="First Name">
               </div>
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Last Name">
+                <input asp-for="LastName" type="text" class="form-control" placeholder="Last Name">
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Email Address">
+                <input asp-for="Email" type="text" class="form-control" placeholder="Email Address" >
               </div>
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="How Long Have you Lived in Quip?">
+                <select class="form-control">
+                  <option value="placeholder">Years in Quip</option>
+                  <option value="0-1">0-1</option>
+                  <option value="1-5">1-5</option>
+                  <option value="5-10">5-10</option>
+                  <option value="10+">10+</option>
+                </select>
               </div>
             </div>
-            <textarea class="form-control" placeholder="What should we turn the Jones School building into?"
+            <textarea asp-for="Answer"  class="form-control" placeholder="What should we turn the Jones School building into?"
               rows="7"></textarea>
             <div class="row">
               <div class="col-md-6 ml-auto mr-auto">
@@ -89,56 +94,43 @@ Coded by www.creative-tim.com
       </div>
     </div>
   </div>
+
+
   <div class="column2">
-    <h1 class="title">Stats</h1>
-    <table class="table">
+    <h1 class="titleR">Who Has Signed So Far?</h1>
+    <table>
       <thead>
         <tr>
           <th>
-            @Html.DisplayNameFor(model => model.FirstName)
+            Name
           </th>
-          <th>
-            @Html.DisplayNameFor(model => model.LastName)
-          </th>
-          <th>
-            @Html.DisplayNameFor(model => model.Email)
-          </th>
+          <th class="blank"></th>
           <th>
             @Html.DisplayNameFor(model => model.Answer)
           </th>
-          <th>
-            @Html.DisplayNameFor(model => model.SingleAnswer)
-          </th>
-          <th></th>
         </tr>
       </thead>
-      <tbody>
-        @* @foreach (var item in Model)
+         <tbody>
+        @foreach (var item in (List<SurveyData>)ViewBag.Petition) //hey the viewbag named petition is going to be the survey data. 
           {
           <tr>
           <td>
           @Html.DisplayFor(modelItem => item.FirstName)
           </td>
+          <td class="blank"></td>
           <td>
-          @Html.DisplayFor(modelItem => item.LastName)
+          @Html.DisplayFor(modelItem => item.Answer)
           </td>
-          <td>
-          @Html.DisplayFor(modelItem => item.Email)
-          </td>
-          <td>
-          @Html.DisplayFor(modelItem => item.SingleAnswer)
-          </td>
-          <td>
-          <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-          <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-          <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-          </td> *@
         </tr>
         }
       </tbody>
     </table>
   </div>
   </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
 
 
 
@@ -183,19 +175,54 @@ Coded by www.creative-tim.com
 </body>
 
 <style>
+
   .column {
     float: left;
     width: 55%;
     min-height: 100vh;
-    background-color: yellow;
+    background-color: white;
+    background-blend-mode: lighten;
   }
 
+  table, th, td {
+    padding-left: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.blank {
+    padding-left: 2%;
+}
+
+  .para{
+    line-height: 250%;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 12%;
+    padding-right: 12%;
+    
+
+  }
   .column2 {
     float: right;
     width: 45%;
-    min-height: 100vh;
-    background-color: blue;
+    max-height: 100vh;
+    background-color: lightslategray;
+    background-color: 50%;
+    color: white;
+    overflow-y: auto;
   }
+  .titleR {
+    color: white;
+    text-align: center;
+
+  }
+
+  .hash {
+    font-size: 100px;
+    padding-bottom: 5%;
+  }
+
 </style>
 
 </html>

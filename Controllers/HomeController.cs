@@ -31,6 +31,10 @@ namespace AGsite.Controllers
         {
             return View();
         }
+        public IActionResult Shop()
+        {
+            return View();
+        }
         public IActionResult CommunityCares()
         {
             return View();

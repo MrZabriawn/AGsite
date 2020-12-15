@@ -15603,6 +15603,11 @@
   "RootNamespace": "AGsite",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Survey\\Create.cshtml",
+      "TargetPath": "Views\\Survey\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -15615,6 +15620,11 @@
     {
       "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Home\\About.cshtml",
       "TargetPath": "Views\\Home\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Survey\\Edit.cshtml",
+      "TargetPath": "Views\\Survey\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15643,8 +15653,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Survey\\Delete.cshtml",
+      "TargetPath": "Views\\Survey\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Home\\CommunityCares.cshtml",
       "TargetPath": "Views\\Home\\CommunityCares.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Survey\\Index.cshtml",
+      "TargetPath": "Views\\Survey\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15653,8 +15673,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Home\\Shop.cshtml",
+      "TargetPath": "Views\\Home\\Shop.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Survey\\Details.cshtml",
+      "TargetPath": "Views\\Survey\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

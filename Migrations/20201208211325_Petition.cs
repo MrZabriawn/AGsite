@@ -2,7 +2,7 @@
 
 namespace AGsite.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Petition : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,7 +15,7 @@ namespace AGsite.Migrations
                     FirstName = table.Column<string>(type: "TEXT", nullable: true),
                     LastName = table.Column<string>(type: "TEXT", nullable: true),
                     Email = table.Column<string>(type: "TEXT", nullable: true),
-                    SingleAnswer = table.Column<bool>(type:"TEXT", nullable: true),
+                    SingleAnswer = table.Column<bool>(type: "INTEGER", nullable: false),
                     Answer = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>

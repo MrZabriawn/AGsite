@@ -3796,8 +3796,8 @@ fieldset[disabled] .btn.active {
 }
 
 .btn-primary {
-  background-color: #51cbce;
-  border-color: #51cbce;
+  background-color: #74dcdc;
+  border-color: #74dcdc;
   color: #FFFFFF;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -3815,9 +3815,9 @@ fieldset[disabled] .btn.active {
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary.dropdown-toggle {
-  background-color: #34b5b8;
+  background-color: #74dcdc;
+  border-color: #74dcdc;
   color: #FFFFFF;
-  border-color: #34b5b8;
   box-shadow: none;
 }
 
@@ -3849,8 +3849,9 @@ fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #34b5b8;
-  border-color: #34b5b8;
+  background-color: #74dcdc;
+  border-color: #74dcdc;
+  color: #FFFFFF;
 }
 
 .btn-primary.btn-link {
@@ -3876,8 +3877,8 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-success {
-  background-color: #6bd098;
-  border-color: #6bd098;
+  background-color: #74dcdc;
+  border-color: #74dcdc;
   color: #FFFFFF;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -3895,9 +3896,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:not(:disabled):not(.disabled).active,
 .btn-success:not(:disabled):not(.disabled).active:focus,
 .show>.btn-success.dropdown-toggle {
-  background-color: #44c47d;
+  background-color: #74dcdc;
+  border-color: #74dcdc;
   color: #FFFFFF;
-  border-color: #44c47d;
   box-shadow: none;
 }
 
@@ -3929,8 +3930,9 @@ fieldset[disabled] .btn-success:focus,
 fieldset[disabled] .btn-success.focus,
 fieldset[disabled] .btn-success:active,
 fieldset[disabled] .btn-success.active {
-  background-color: #44c47d;
-  border-color: #44c47d;
+  background-color: #74dcdc;
+  border-color: #74dcdc;
+  color: #FFFFFF;
 }
 
 .btn-success.btn-link {
@@ -3956,8 +3958,8 @@ fieldset[disabled] .btn-success.active {
 }
 
 .btn-info {
-  background-color: #51bcda;
-  border-color: #51bcda;
+  background-color: #74dcdc;
+  border-color: #74dcdc;
   color: #FFFFFF;
   opacity: 1;
   filter: alpha(opacity=100);

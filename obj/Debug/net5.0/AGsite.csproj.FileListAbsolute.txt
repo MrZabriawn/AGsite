@@ -168,5 +168,12 @@ C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Home\About.cshtm
 C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Home\CommunityCares.cshtml.g.cs
 C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Home\CSForQuips.cshtml.g.cs
 C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Home\News.cshtml.g.cs
-C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Survey\Survey.cshtml.g.cs
 C:\Users\AcademyPgh\Desktop\AGsite\bin\Debug\net5.0\CreativeTimTemplate\package.json
+C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Home\Shop.cshtml.g.cs
+C:\Users\AcademyPgh\Desktop\AGsite\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Survey\Create.cshtml.g.cs
+C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Survey\Delete.cshtml.g.cs
+C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Survey\Details.cshtml.g.cs
+C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Survey\Edit.cshtml.g.cs
+C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Survey\Index.cshtml.g.cs
+C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Survey\Survey.cshtml.g.cs
