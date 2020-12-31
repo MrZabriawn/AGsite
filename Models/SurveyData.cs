@@ -12,7 +12,7 @@ namespace AGsite.Models
 
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
-        public bool SingleAnswer {get; set;}
+        public string YearsHere { get; set; }
         public string Answer { get; set; }
     }
 }

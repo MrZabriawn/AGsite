@@ -28,7 +28,7 @@ namespace AGsite
             services.AddControllersWithViews();
             
             services.AddDbContext<SurveyDataContext>(options =>
-                    options.UseSqlite(Configuration.GetConnectionString("SurveyDataContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("SurveyDataContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
