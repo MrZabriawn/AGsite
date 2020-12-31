@@ -15608,11 +15608,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Home\\Donate.cshtml",
-      "TargetPath": "Views\\Home\\Donate.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\AcademyPgh\\Desktop\\AGsite\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"

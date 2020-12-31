@@ -23,11 +23,6 @@ namespace AGsite.Controllers
             return View();
         }
 
-                public IActionResult Donate()
-        {
-            return View();
-        }
-
         public IActionResult About()
         {
             return View();
