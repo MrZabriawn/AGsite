@@ -1945,7 +1945,6 @@ License - nucleoapp.com/license/
   display: inline-block;
   font: normal normal normal 14px/1 'nucleo-icons';
   font-size: inherit;
-  speak: none;
   text-transform: none;
   /* Better Font Rendering */
   -webkit-font-smoothing: antialiased;
@@ -8929,7 +8928,6 @@ textarea.form-control {
 
 .media-post .media-body {
   width: 85%;
-  float: left;
   display: inline-block;
 }
 
@@ -9031,7 +9029,6 @@ textarea.form-control {
 .modal-footer .divider {
   background-color: #DDDDDD;
   display: inline-block;
-  float: inherit;
   height: 63px;
   margin: 0px -3px;
   width: 1px;
@@ -9847,7 +9844,6 @@ video {
 
 .card .stats {
   display: inline-block;
-  float: right;
   color: #9A9A9A;
   font-size: 12px;
   margin-top: 6px;
@@ -10759,7 +10755,6 @@ video {
   z-index: 1500;
   -webkit-text-size-adjust: 100%;
   /* create separate layer, to avoid paint on window.onscroll in webkit/blink */
-  -webkit-backface-visibility: hidden;
   outline: none;
 }
 
@@ -10817,7 +10812,6 @@ video {
   height: 100%;
   background: rgba(232, 231, 227, 0.96);
   opacity: 0;
-  -webkit-backface-visibility: hidden;
   will-change: opacity;
 }
 
@@ -10876,7 +10870,6 @@ video {
 
 .pswp__container,
 .pswp__zoom-wrap {
-  -webkit-backface-visibility: hidden;
   will-change: transform;
 }
 
@@ -10903,9 +10896,6 @@ video {
 	stretched thumbnail or div placeholder element (see below)
 	style is added to avoid flickering in webkit/blink when layers overlap
 */
-.pswp__img--placeholder {
-  -webkit-backface-visibility: hidden;
-}
 
 /*
 	div element that matches size of large image
@@ -11136,7 +11126,6 @@ video {
   opacity: 0;
   -webkit-transition: opacity 0.25s ease-out;
   transition: opacity 0.25s ease-out;
-  -webkit-backface-visibility: hidden;
   will-change: opacity;
 }
 
@@ -11160,7 +11149,6 @@ video {
   transform: translateY(6px);
   -webkit-transition: -webkit-transform 0.25s;
   transition: transform 0.25s;
-  -webkit-backface-visibility: hidden;
   will-change: transform;
 }
 
@@ -11476,7 +11464,6 @@ a.pswp__share--download:hover {
 .pswp__top-bar,
 .pswp--has_mouse .pswp__button--arrow--left,
 .pswp--has_mouse .pswp__button--arrow--right {
-  -webkit-backface-visibility: hidden;
   will-change: opacity;
   -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
   transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
@@ -11567,7 +11554,6 @@ a.pswp__share--download:hover {
   z-index: 1500;
   -webkit-text-size-adjust: 100%;
   /* create separate layer, to avoid paint on window.onscroll in webkit/blink */
-  -webkit-backface-visibility: hidden;
   outline: none;
 }
 
@@ -11625,7 +11611,6 @@ a.pswp__share--download:hover {
   height: 100%;
   background: rgba(232, 231, 227, 0.96);
   opacity: 0;
-  -webkit-backface-visibility: hidden;
   will-change: opacity;
 }
 
@@ -11684,7 +11669,6 @@ a.pswp__share--download:hover {
 
 .pswp__container,
 .pswp__zoom-wrap {
-  -webkit-backface-visibility: hidden;
   will-change: transform;
 }
 
@@ -11711,9 +11695,6 @@ a.pswp__share--download:hover {
 	stretched thumbnail or div placeholder element (see below)
 	style is added to avoid flickering in webkit/blink when layers overlap
 */
-.pswp__img--placeholder {
-  -webkit-backface-visibility: hidden;
-}
 
 /*
 	div element that matches size of large image
@@ -11751,17 +11732,6 @@ a.pswp__share--download:hover {
   text-decoration: underline;
 }
 
-.section-isometricGrids {
-  /* Header */
-  /* Top Navigation Style */
-  /* Demo links */
-  /* Content */
-  /* Related demos */
-  /* Shadow effect */
-  /* All individual isometric grid layouts (static and scrollable) */
-  /* Shadow effect */
-  /* All individual isometric grid layouts (static and scrollable) */
-}
 
 .section-isometricGrids .button-menu {
   width: 50px;
@@ -11850,7 +11820,6 @@ a.pswp__share--download:hover {
   font-variant: normal;
   font-family: 'Lato', sans-serif;
   line-height: 1;
-  speak: none;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -13926,7 +13895,6 @@ body {
 }
 
 #cd-vertical-nav a span {
-  float: right;
   display: inline-block;
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
@@ -14975,10 +14943,6 @@ body {
     display: none;
   }
 
-  .navbar-fixed-top {
-    -webkit-backface-visibility: hidden;
-  }
-
   .social-line .btn {
     margin: 0 0 10px 0;
   }
@@ -15861,7 +15825,6 @@ License - nucleoapp.com/license/
   display: inline-block;
   font: normal normal normal 14px/1 'nucleo-icons';
   font-size: inherit;
-  speak: none;
   text-transform: none;
   /* Better Font Rendering */
   -webkit-font-smoothing: antialiased;

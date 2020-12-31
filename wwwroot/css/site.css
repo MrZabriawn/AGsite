@@ -104,7 +104,7 @@ div.desc {
 
 .column {
 float: left;
-width: 55%;
+width: 50%;
 min-height: 100vh;
 max-height: 100vh;
 background-color: white;
@@ -129,18 +129,21 @@ text-align: left;
 padding-left: 12%;
 padding-right: 12%;
 }
+
 .disclaim {
 font-size: 10px;
 }
+
 .column2 {
 float: right;
-width: 45%;
+width: 50%;
 max-height: 100vh;
+min-height: 100vh;
 background-color: lightslategray;
 background-color: 50%;
 color: white;
 overflow-y: auto;
-padding-top: 2%;
+padding: 2%;
 }
 .titleR {
 text-align: center;
@@ -150,4 +153,57 @@ text-align: center;
 .hash {
 font-size: 100px;
 padding-bottom: 5%;
+}
+
+.icon{
+  height: 50px;
+  width: 50px;
+}
+
+.vidwrapper {
+  padding: 3%;
+}
+
+.vid-container {
+  height: 50vh;
+  text-align: center;
+  padding: 1%;
+
+}
+
+#wrapperp {
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  margin-bottom: 3%;
+}
+
+.posters {
+  height: 100%;
+  width: 75%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 2%;
+}
+
+.video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#CS
+{
+  width: 75%;
+  padding-left: 3%;
+  padding-right: 0%;
+  margin: 0%;
+}
+
+.upload
+{
+  float: right;
+  width: 200px;
+  height: 75px;
+  margin: -115px;
 }
