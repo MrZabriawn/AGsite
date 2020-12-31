@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using AGsite.Data;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace AGsite
 {
@@ -13,7 +15,12 @@ namespace AGsite
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var host = CreateHostBuilder(args).Build();
+            using (var scope = host.Services.CreateScope())
+            {
+                DBInitializer.Initialize(scope.ServiceProvider.GetRequiredService<SurveyDataContext>());
+            }
+            host.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

@@ -25,7 +25,7 @@ namespace AGsite.Controllers
             return View(await _context.SurveyAnswers.ToListAsync());
         }
 
-          public async Task<IActionResult> Survey()
+        public async Task<IActionResult> Survey()
         {
             ViewBag.Petition = await _context.SurveyAnswers.ToListAsync();
             return View(new SurveyData());
