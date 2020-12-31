@@ -1931,7 +1931,7 @@ License - nucleoapp.com/license/
 
 -------------------------------- */
 @font-face {
-  font-family: 'nucleo-icons';
+  font-family: 'Lato', sans-serif;
   src: url("../fonts/nucleo-icons.eot");
   src: url("../fonts/nucleo-icons.eot") format("embedded-opentype"), url("../fonts/nucleo-icons.woff2") format("woff2"), url("../fonts/nucleo-icons.woff") format("woff"), url("../fonts/nucleo-icons.ttf") format("truetype"), url("../fonts/nucleo-icons.svg") format("svg");
   font-weight: normal;
@@ -2620,7 +2620,7 @@ License - nucleoapp.com/license/
 }
 
 .form-check .form-check-sign::after {
-  font-family: 'FontAwesome';
+  font-family: 'Lato', sans-serif;
   content: "\f00c";
   top: -1px;
   text-align: center;
@@ -2673,7 +2673,7 @@ License - nucleoapp.com/license/
 }
 
 .form-check-radio .form-check-sign::before {
-  font-family: 'FontAwesome';
+  font-family: 'Lato', sans-serif;
   content: "\f10c";
   font-size: 22px;
   -webkit-font-smoothing: antialiased;
@@ -2702,7 +2702,7 @@ License - nucleoapp.com/license/
 }
 
 .form-check-radio input[type="radio"]:checked+.form-check-sign::after {
-  font-family: 'FontAwesome';
+  font-family: 'Lato', sans-serif;
   content: "\f192";
   top: -5px;
   position: absolute;
@@ -3132,8 +3132,9 @@ select,
 textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
+  color: #000;
 }
 
 h1,
@@ -3214,7 +3215,7 @@ h6 .small,
 .h4 .small,
 .h5 .small,
 .h6 .small {
-  color: #9A9A9A;
+  color:black;
   line-height: 1.5em;
 }
 
@@ -3234,7 +3235,7 @@ h3 .small {
 .footer-big h5,
 .footer-big h4,
 .media .media-heading {
-  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .title,
@@ -3362,10 +3363,11 @@ blockquote small {
 /*     General overwrite     */
 body {
   padding-top: 4%;
-  color: #66615b;
+  color: black;
+  color: black;
   font-size: 14px;
   font-weight: 300;
-  font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -11846,7 +11848,7 @@ a.pswp__share--download:hover {
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
-  font-family: 'codropsicons';
+  font-family: 'Lato', sans-serif;
   line-height: 1;
   speak: none;
   -webkit-font-smoothing: antialiased;
@@ -11895,11 +11897,11 @@ a.pswp__share--download:hover {
   color: #fff;
   position: relative;
   z-index: 1000;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .section-isometricGrids .section__heading em {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   text-transform: uppercase;
   font-size: 0.3em;
@@ -15845,7 +15847,7 @@ License - nucleoapp.com/license/
 
 -------------------------------- */
 @font-face {
-  font-family: 'nucleo-icons';
+  font-family: 'Lato', sans-serif;
   src: url("../fonts/nucleo-icons.eot");
   src: url("../fonts/nucleo-icons.eot") format("embedded-opentype"), url("../fonts/nucleo-icons.woff2") format("woff2"), url("../fonts/nucleo-icons.woff") format("woff"), url("../fonts/nucleo-icons.ttf") format("truetype"), url("../fonts/nucleo-icons.svg") format("svg");
   font-weight: normal;

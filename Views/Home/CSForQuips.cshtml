@@ -3,26 +3,66 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">CS For Quips</h1>
-    <p>Insert Flyers and a short paragaph explaining.</p>
+    <h1 class="display-4">CS For Quips!</h1>
 </div>
 
-<div class="vid-container" id="first">
-    <iframe class="video" src="https://www.youtube.com/embed/mRuPUh-_pXU">Video 2</iframe>
-</div>
-<div class="vid-container" id="second">
-    <video>Video 1</video>
+<div class="vidwrapper">
+    <div class="vid-container" id="first">
+        <iframe class="video" src="https://www.youtube.com/embed/mRuPUh-_pXU">Video 2</iframe>
+    </div>
+    <div class="vid-container" id="second">
+        <iframe class="video" src="https://www.youtube.com/embed/lo5cG0FhWro">Video 2</iframe>
+    </div>
 </div>
 
+<div>
+    <hr />
+    <p class="para">CS for Quips is a free 6 week virtual computer science course for students in grades 6-10. Students
+        will learn the basics of HTML, JavaScript, and CSS to build their own website. The classes will be instructed by
+        experienced professionals from Beta Builders [link]. Funding secured with the assistance of Grow a Generation
+        STEM Leadership Center [link].</p>
+    <hr />
+</div>
 
-<img src="\Site Assets\Beta-Builders-Academy-Pittsburgh-logo-800.png"> 
+<div id="wrapperp">
+    <div>
+        <img class="posters" src="\Site Assets\2.png" id="firstp">
+    </div>
+    <div>
+        <img class="posters" src="\Site Assets\4.png" id="fourthp">
+    </div>
+    <div>
+        <img class="posters" src="\Site Assets\3.png" id="secondp">
+    </div>
+</div>
 
 <style>
+    .vidwrapper {
+        padding: 3%;
+        height: 410px;
+        overflow: hidden;
+    }
+
     .vid-container {
-        height: 25vh;
+        height: 50vh;
         width: 50%;
         text-align: center;
 
+    }
+
+    #wrapperp {
+        overflow: hidden;
+        display: flex;
+        align-content: center;
+        margin-bottom: 3%;
+    }
+
+    .posters {
+        height: 100%;
+        width: 75%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border: solid 15px black;
     }
 
     .video {
@@ -40,7 +80,18 @@
         float: right;
         background-color: blue;
     }
+
+    .para {
+        text-align: center;
+    }
+
+    #firstp {}
+
+    #secondp {}
+
+    #fourthp {}
+
     body {
-        padding-bottom: 0%;
+        padding-bottom: 0;
     }
 </style>

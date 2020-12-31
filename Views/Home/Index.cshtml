@@ -3,5 +3,67 @@
 }
 
 <div class="text-center">
-    <h4>Home of the Aliquippa Renaissance</h4>
+    <h1>Home of the Aliquippa Renaissance</h1>
 </div>
+
+<div class="trailer">
+    <iframe width="720px" class="video" src="https://www.youtube.com/embed/mRuPUh-_pXU">Video 2</iframe>
+</div>
+
+<br>
+<div class="buttwrap">
+    <a class="homebutt" asp-controller="Survey" asp-action="Survey">Take Action</a>
+    <a class="homebutt" asp-controller="Home" asp-action="Donate">Donate Today</a>
+</div>
+<div class="buttwrap">
+    <p class="boop">Have you been wondering what is going on with the Jones School site? Do you have an idea of what
+        should be there? Let us know by signing the petition.</p>
+    <p class="boop">Aliquippa Green is dedicated to educating Aliquippa about sustainable practices including visual
+        community maintenance, local food production, and green technology. Donors like you make these goals a reality.
+        Donate today to contribute towards our QuipCares program.</p>
+</div>
+
+<style>
+    .boop {
+        border: none;
+        color: black;
+        text-align: left;
+        text-decoration: none;
+        padding-left: 2px;
+        display: inline-block;
+        font-size: 16px;
+        height: 75px;
+        width: 250px;
+        margin: 4px 52px;
+        cursor: pointer;
+    }
+
+    .buttwrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .homebutt {
+        border: none;
+        color: white;
+        display: flex;
+        font-size: 34px;
+        height: 75px;
+        width: 250px;
+        margin: 4px 52px;
+        cursor: pointer;
+        background-color: black;
+        padding-left: 2%;
+        padding-right: 2%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trailer {
+        display: flex;
+        justify-content: center;
+        padding: 3%;
+        height: 410px;
+    }
+</style>

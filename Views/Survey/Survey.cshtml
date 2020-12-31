@@ -51,8 +51,22 @@ Coded by www.creative-tim.com
           site be converted into a space that adds value to the community. If you are interested in sharing
           your thoughts please fill out the petition below.
 
-          And please consider attending the hearing.
+          Please consider attending the hearing.
         </p>
+        <div class="galleria">
+          <div class="gallery">
+            <img src="\Site Assets\image (5).png" width="600" height="400">
+          </div>
+          
+
+          <div class="gallery">
+              <img src="\Site Assets\image (6).png" width="600" height="400">
+          </div>
+
+            <div class="gallery">
+                <img src="\Site Assets\image (2).png" width="600" height="400">
+            </div>
+            </div>
       </div>
       <div class="row">
         <div class="col-md-6 ml-auto mr-auto text-center">
@@ -88,8 +102,7 @@ Coded by www.creative-tim.com
               </div>
             </div>
           </form>
-          <h3 class="visit"><small>Put a petition disclaimer here. Something something sending emails and whatnot and
-              so.</small></h3>
+          <h4 class="disclaim">Your personal information will be kept private and held securely. By submitting information you are agreeing to your first name being displayed and being included in the petition when we hand it in. We may use your email to send you further updates and actions. You may unsubscribe from these emails at any time.</h4>
         </div>
       </div>
     </div>
@@ -176,12 +189,41 @@ Coded by www.creative-tim.com
 
 <style>
 
+  .galleria {
+        display: flex;
+        align-content: center;
+        overflow-x: auto;
+    }
+
+  div.gallery {
+        margin: 8px;
+        border: 3px solid #ccc;
+        float: left;
+        width: 250px;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
   .column {
     float: left;
     width: 55%;
     min-height: 100vh;
+    max-height: 100vh;
     background-color: white;
     background-blend-mode: lighten;
+    padding-top: 2%;
   }
 
   table, th, td {
@@ -200,8 +242,9 @@ Coded by www.creative-tim.com
     text-align: center;
     padding-left: 12%;
     padding-right: 12%;
-    
-
+  }
+  .disclaim {
+    font-size: 10px;
   }
   .column2 {
     float: right;
@@ -211,6 +254,7 @@ Coded by www.creative-tim.com
     background-color: 50%;
     color: white;
     overflow-y: auto;
+    padding-top: 2%;
   }
   .titleR {
     color: white;

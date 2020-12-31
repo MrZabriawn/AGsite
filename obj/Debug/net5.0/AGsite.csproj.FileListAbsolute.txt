@@ -177,3 +177,4 @@ C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Survey\Details.c
 C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Survey\Edit.cshtml.g.cs
 C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Survey\Index.cshtml.g.cs
 C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Survey\Survey.cshtml.g.cs
+C:\Users\AcademyPgh\Desktop\AGsite\obj\Debug\net5.0\Razor\Views\Home\Donate.cshtml.g.cs

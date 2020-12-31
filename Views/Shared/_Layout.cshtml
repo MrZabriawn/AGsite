@@ -41,9 +41,9 @@ Coded by www.creative-tim.com
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-default">
-    <div class="container">
+    <div class="containerav">
       <div class="navbar-translate">
-        <a class="navbar-brand" asp-controller="Home" asp-action="Index">QuipWorks</a>
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index"><img src="\Site Assets\QW Logo.png" width="153" height="61"></a>
         <a class="navbar-brand" asp-controller="Survey" asp-action="Survey">Petition</a>
         <a class="navbar-brand" asp-controller="Home" asp-action="CSForQuips">CS For Quips</a>
         <a class="navbar-brand" asp-controller="Home" asp-action="CommunityCares">QuipCares</a>
@@ -87,7 +87,7 @@ Coded by www.creative-tim.com
   </nav>
   <!-- End Navbar -->
 
-  <div class="wrapper" style="height:100vh;">
+  <div class="wrapper" style="min-height: 110vh;">
     @RenderBody()
   </div>
   <footer class="footer footer-black">
@@ -95,9 +95,8 @@ Coded by www.creative-tim.com
       <div class="row">
         <nav class="footer-nav">
           <ul>
-            <li><a href="https://www.creative-tim.com" target="_blank">About</a></li>
-            <li><a href="http://blog.creative-tim.com/" target="_blank">Privacy</a></li>
-            <li><a href="https://www.creative-tim.com/license" target="_blank">Licenses</a></li>
+            <li><a asp-controller="Home" asp-action="About">About</a></li>
+            <li><a asp-controller="Home" asp-action="Donate">Donate</a></li>
           </ul>
         </nav>
         <div class="credits ml-auto">
@@ -129,5 +128,14 @@ Coded by www.creative-tim.com
   <script src="~/js/paper-kit.min.js?v=2.3.1" type="text/javascript"></script>
   @await RenderSectionAsync("Scripts", required: false)
 </body>
+
+<style>
+  .containerav {
+    display: flex;
+    justify-content: left;
+    padding-left: 0%;
+    margin-left: 0%;
+  }
+</style>
 
 </html>
