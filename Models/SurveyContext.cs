@@ -10,6 +10,7 @@ namespace AGsite.Data
         {
         }
 
+        public DbSet<UserModel> Users { get; set; }
         public DbSet<SurveyData> SurveyAnswers { get; set; } //making a new table called Survey Answers of the class SurveyData. 
     }
 

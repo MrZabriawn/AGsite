@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AGsite.Data;
 using AGsite.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AGsite.Controllers
 {
