@@ -1,18 +1,17 @@
-@model AGsite.Models.SurveyData
+﻿@model AGsite.Models.SurveyData
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Create";
 }
 
-<h1>Edit</h1>
+<h1>Create</h1>
 
 <h4>SurveyData</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
             <div class="form-group">
                 <label asp-for="FirstName" class="control-label"></label>
                 <input asp-for="FirstName" class="form-control" />
@@ -28,10 +27,10 @@
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="YearsHere" /> @Html.DisplayNameFor(model => model.YearsHere)
-                </label>
+            <div class="form-group">
+                <label asp-for="YearsHere" class="control-label"></label>
+                <input asp-for="YearsHere" class="form-control" />
+                <span asp-validation-for="YearsHere" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Answer" class="control-label"></label>
@@ -39,7 +38,7 @@
                 <span asp-validation-for="Answer" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
