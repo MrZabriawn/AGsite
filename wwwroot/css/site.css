@@ -31,11 +31,11 @@ form.hidden {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+  font-size: .75em;
 }
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: .75em;
   }
 }
 
@@ -64,7 +64,7 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-top: 40px;
+  margin-top: 1.5em;
   font-family: 'Lato';
 }
 
@@ -123,7 +123,7 @@ padding-right: 12%;
 }
 
 .disclaim {
-font-size: 10px;
+font-size: .75em;
 }
 
 .column2 {
@@ -141,7 +141,7 @@ text-align: center;
 }
 
 .hash {
-font-size: 100px;
+font-size: 2em;
 padding-bottom: 5%;
 }
 
@@ -210,7 +210,7 @@ padding-bottom: 5%;
   text-decoration: none;
   padding-left: 2px;
   display: inline-block;
-  font-size: 16px;
+  font-size: .75em;
   height: 75px;
   width: 250px;
   margin: 4px 52px;
@@ -227,7 +227,7 @@ padding-bottom: 5%;
   border: none;
   color: white;
   display: flex;
-  font-size: 30px;
+  font-size: .75em;
   height: 75px;
   width: 250px;
   margin: 4px 52px;
