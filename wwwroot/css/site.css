@@ -203,26 +203,6 @@ padding-bottom: 5%;
   padding: 2%;
 }
 
-.boop {
-  border: none;
-  color: black;
-  text-align: left;
-  text-decoration: none;
-  padding-left: 2px;
-  display: inline-block;
-  font-size: .75em;
-  height: 75px;
-  width: 250px;
-  margin: 4px 52px;
-  cursor: pointer;
-}
-
-.buttwrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .homebutt {
   border: none;
   color: white;
