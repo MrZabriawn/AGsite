@@ -66,7 +66,6 @@ body {
   /* Margin bottom by footer height */
   margin-top: 1.5em;
   font-family: 'Lato';
-  min-width: 100vw;
 }
 
 
@@ -78,8 +77,6 @@ body {
 
 div.gallery {
   margin: 8px;
-  border: 3px solid #ccc;
-  float: left;
   width: 250px;
 }
 
@@ -225,6 +222,7 @@ padding-bottom: 5%;
   justify-content: center;
   padding: 1%;
   height: 75vh;
+  padding-top: 5%;
 }
 
 .containerav {
