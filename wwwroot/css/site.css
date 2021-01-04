@@ -222,8 +222,8 @@ padding-bottom: 5%;
 .trailer {
   display: flex;
   justify-content: center;
-  padding: 3%;
-  height: 410px;
+  padding: 1%;
+  height: 75vh;
 }
 
 .containerav {
