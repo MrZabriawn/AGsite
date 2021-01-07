@@ -73,9 +73,6 @@
       <thead>
         <tr>
           <th>
-            No.
-          </th>
-          <th>
             First Name
           </th>
           <th>
@@ -90,9 +87,6 @@
         @foreach (var item in (List<SurveyData>)ViewBag.Petition) //hey the viewbag named petition is going to be the survey data. 
           {
           <tr>
-            <td>
-          @Html.DisplayFor(modelItem => item.Id)
-          </td>
           <td>
           @Html.DisplayFor(modelItem => item.FirstName)
           </td>
