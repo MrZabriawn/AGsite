@@ -35,50 +35,30 @@ Coded by www.creative-tim.com
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-default">
-    <div class="containerav">
-      <div class="navbar-translate">
-        <a class="navbar-brand" asp-controller="Home" asp-action="Index"><img src="\Site Assets\QW Logo.png" width="153"
-            height="61"></a>
-        <a class="navbar-brand" asp-controller="Survey" asp-action="Survey">Petition</a>
-        <a class="navbar-brand" asp-controller="Home" asp-action="CSForQuips">CS For Quips</a>
-        <a class="navbar-brand" asp-controller="Home" asp-action="CommunityCares">QuipCares</a>
-        @* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-          aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-bar bar1"></span>
-          <span class="navbar-toggler-bar bar2"></span>
-          <span class="navbar-toggler-bar bar3"></span>
-          </button>
-          </div>
-          <div class="collapse navbar-collapse" data-nav-image="~/img/blurred-image-1.jpg" data-color="orange">
-          <ul class="navbar-nav ml-auto">
-          <li class="dropdown nav-item">
-          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
-          Link 1 </a>
-          <div class="dropdown-menu dropdown-menu-right dropdown-danger">
-          <a href="javascript:;" class="dropdown-item">
-          Sub link 1
-          </a>
-          <a href="javascript:;" class="dropdown-item">
-          Sub link 2
-          </a>
-          <a href="javascript:;" class="dropdown-item">
-          Sub link 3
-          </a>
-          </div>
-          </li>
-          <li class="nav-item">
-          <a href="#" class="nav-link" id="navbarDropdownMenuLink1" data-toggle="dropdown">
-          Link 2
-          </a>
-          </li>
-          <li class="nav-item">
-          <a class="btn btn-round btn-danger" href="https://www.creative-tim.com/product/paper-kit-2-pro" target="_blank">
-          <i class="nc-icon nc-cart-simple"></i> Link 3
-          </a>
-          </li>
-          </ul>*@
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-expand-md fixed-top navbar-default">
+    <div class="navbar-translate">
+      <a class="navbar-brand" asp-controller="Home" asp-action="Index"><img src="\Site Assets\QW Logo.png" width="153"
+          height="61"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" data-color="black">
+      <ul class="navbar-nav ml-auto">
+        <li class="dropdown nav-item">
+          <a class="btn btn-round btn-danger" asp-controller="Survey" asp-action="Survey">Petition</a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-round btn-danger" id="navbarDropdownMenuLink1" asp-controller="Home"
+              asp-action="CSForQuips">CS For Quips</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-round btn-danger" asp-controller="Home" asp-action="CommunityCares">QuipCares</a>
+        </li>
+      </ul>
     </div>
   </nav>
   <!-- End Navbar -->
