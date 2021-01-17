@@ -13,48 +13,61 @@
 </div>
 
 <h2 style="text-align:center">Our Team</h2>
-<div class="row">
-    <div class="column">
+<div class="row" id="peoplecards">
+    <div class="col-md-4">
         <div class="card">
             <img src="\Site Assets\headshotZ.jpg" alt="Zabriawn Smith" style="width:100%">
             <div class="container">
                 <h2>Zabriawn Eugene Smith</h2>
                 <p class="title">Treasurer & Founder</p>
-                <p>"Maybe we should put quotes here and then links to personal pages or something."</p>
-                <p>zeugenesmith@gmail.com</p>
+                <p class="title">"There is no end to learning."</p>
+                <p>Zabriawn Eugene Smith is an Aliquippa native and resident. Currently a realtor and executive at a
+                    business incubator, Zabriawn bring a host of different skillsets to the resource pool for Aliquippa
+                    Green. After making the most of his academic scholarhship to Washington and Lee University, Zabriawn
+                    taught elementary school for 3 years. His focus is on connecting Aliquippa to recources that already
+                    exist and have proven successful in larger cities. </p>
+                <p>Contact: zeugenesmith@gmail.com</p>
                 <p><button href="www.zabriawn.com" class="button">Connect</button></p>
             </div>
         </div>
     </div>
 
-    <div class="column">
+    <div class="col-md-4">
         <div class="card">
-            <img src="\Site Assets\alexjones.jpg" alt="Mike" style="width:100%">
+            <img src="\Site Assets\alexjones.jpg" alt="Alexandra Jones" style="width:100%">
             <div class="container">
                 <h2>Alexandra Jones</h2>
                 <p class="title">Chair & Founder</p>
-                <p></p>
+                <p class="title">"Reach back for knowledge and wisdom, be present for experience and understanding, and
+                    teach for a
+                    better tomorrow."</p>
                 <p>Alex Jones graduated from the University of Pittsburgh with a Bachelor of Arts in Urban Studies and a
-                    Certificate in Nonprofit Management. During her undergraduate career Alex was heavily involved in
-                    service. After graduating she worked at the Western Pennsylvania Diaper Bank as the Administrative
-                    Assistant and served as a Public Ally AmeriCorps Apprentice with Reading is Fundamental Pittsburgh.
-                    Alex also served as the Community Service Chair for the Urban League Young Professionals of Greater
-                    Pittsburgh.</p>
+                    Certificate in Nonprofit Management. After graduating she worked at the Western Pennsylvania Diaper
+                    Bank as the Administrative Assistant and served as a Public Ally AmeriCorps Apprentice with Reading
+                    is Fundamental Pittsburgh. Alex also served as the Community Service Chair for the Urban League
+                    Young Professionals of Greater Pittsburgh.</p>
                 <p>Contact: aliquippagreeninc@gmail.com</p>
-                <p><button class="button">Connect</button></p>
+                <p><button href="https://www.linkedin.com/in/alexandra-jones-a7821a186/" class="button">Connect</button>
+                </p>
             </div>
         </div>
     </div>
 
-    <div class="column">
+    <div class="col-md-4">
         <div class="card">
-            <img src="\Site Assets\marissa.jpg" alt="John" style="width:100%">
+            <img src="\Site Assets\marissa.jpg" alt="Marissa Stakeley" style="width:100%">
             <div class="container">
                 <h2>Marissa Stakeley</h2>
                 <p class="title">Board Member</p>
-                <p>"Everyday I learn something new about Excel."</p>
-                <p>john@example.com</p>
-                <p><button class="button">Connect</button></p>
+                <p class="title">"Synchronize with the earth: one's focused energy moves this world either forward or
+                    back."</p>
+                <p>Marissa A. Stakeley currently pursues a BS in Sustainability in Energy and
+                    Urban Systems and minors in Business at Chatham University. She is an EcoDistricts Accredited
+                    Professional. Her focus is in alternative, affordable, and sustainable housing solutions. She also
+                    deeply cares about the re-establishment of hyper-local food, transportation, and energy generation
+                    systems to serve those in a community.</p>
+                <p>Contact: mastakeley@gmail.com</p>
+                <p><button href="https://www.linkedin.com/in/marissastakeley/" class="button">Connect</button></p>
             </div>
         </div>
     </div>
@@ -64,6 +77,10 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
+    }
+
+    #peoplecards {
+        justify-content: space-evenly;
     }
 
     html {
@@ -85,11 +102,10 @@
 
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        margin: 8px;
     }
 
     .about-section {
-        padding: 50px;
+        padding: 10px;
         text-align: center;
         background-color: #DC143C;
         color: white;
@@ -108,7 +124,7 @@
     }
 
     .para {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     .title {
